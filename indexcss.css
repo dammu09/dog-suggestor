@@ -1,0 +1,131 @@
+body
+{
+  background-color:#000;
+  color: rgb(202, 217, 176);
+}
+h1
+{
+  text-align: center;
+  padding-right:300px ;
+  font-family: 'Fira Sans', sans-serif;
+}
+p
+{
+  display: block;
+}
+nav
+{
+  list-style: none;
+  padding-top: 0;
+}
+ul
+{
+  color:green;
+  display: inline-block;
+  margin: 10px 30px;
+  text-decoration: none;
+  right: 10px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+}
+nav ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 2s;
+}
+.a1
+{
+  text-align: left;
+  float: left;
+  padding-right: 400px;
+  padding-top: 10px;
+  width: 50%;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+.a2
+{
+  text-align: right;
+  float: right;
+  padding-bottom:50px ;
+  padding-left: 400px;
+  width: 50%;
+  color: #000;
+}
+.container {
+  display: flex;
+  align-items: center; 
+  font-family: 'Lato', sans-serif;
+}
+
+.container p {
+flex: 1;
+}
+
+.container img 
+{
+  margin-left: 10px;
+} 
+img
+{
+  height: 210px;
+  width: 300px;
+  border-radius: 50%;
+}
+p
+{
+  font-size: 20px;
+  padding: 20px;
+}
+.container1 {
+  display: flex;
+  align-items: center; 
+  font-family: 'Lato', sans-serif;
+}
+
+.container1 p {
+  flex: 1; 
+}
+
+.container1 img {
+  margin-left: 10px; 
+}
+.container2 {
+  display: flex;
+  align-items: center; 
+}
+
+.container2 p {
+  flex: 1; 
+  font-family: 'Lato', sans-serif;
+}
+
+.container2 img {
+  margin-left: 10px; 
+}
+hr
+{
+  border-top: grey 5px dotted;
+  align-items: center;
+  padding-right: 50px;
+  width: 10%;
+}
+.Copyright
+{
+  text-align: center;
+}
+a
+{
+  color: aqua;
+}

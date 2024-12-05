@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="butcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>Suggestion</title>
+</head>
+<body>
+    <h2>XYZ NGO</h2>
+    <div class="container">
+        <img src="dog6.jpg" alt="Dog">
+        <p id="header">Are you willing to adopt a high mainteance dog?</p>
+        <br>
+        <br>
+        <button onclick="q11()">Yes</button>
+        <button onclick="q12()">No</button> 
+    </div>
+    <script>
+        const header = document.getElementById('header');
+        const text = header.textContent;
+        header.textContent = ''; 
+
+        let i = 0;
+        const intervalId = setInterval(() => {
+        header.textContent += text[i];
+        i++;
+
+        if (i >= text.length) {
+            clearInterval(intervalId);
+        }
+        }, 100);
+        function q11()
+        {
+            window.location.href = "but5.html";
+        }
+        function q12()
+        {
+            window.location.href = "but6.html";
+        }
+    </script>
+</body>
+</html>

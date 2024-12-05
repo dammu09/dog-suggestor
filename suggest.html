@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dog Suggestion</title>
+  <link rel="stylesheet" href="suggestcss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="header">We are going to help you to choose your dog</h1>
+  <div class="container">
+  <img src="dog3.png" alt="dog"> 
+  <p>To know more about dogs, click the button aside:</p>
+  <br>
+  <button onclick="openInputPage()">Know More</button>
+  </div>
+  <h6 class="last">For more details   <a target="_blank" href="contact.html">Contact us</a></h6>
+  <script>
+    function openInputPage()
+    {
+      window.open("but.html","_blank");
+    }
+    const header = document.getElementById('header');
+    const text = header.textContent;
+    header.textContent = ''; 
+
+    let i = 0;
+    const intervalId = setInterval(() => {
+      header.textContent += text[i];
+      i++;
+
+      if (i >= text.length) {
+        clearInterval(intervalId);
+      }
+    }, 100);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body
+{
+    background-color: black;
+}
+h1
+{
+    color: rgb(202, 217, 176);
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
+form input, form textarea
+{
+  width: 100%;
+  align-items: right;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #fff;
+}
+form .bttn
+{
+    width: 100%;
+  padding : 14px 60px;
+  align-items: right;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #000;
+  background-color: rgb(202, 217, 176);
+  border-radius: 10px;
+  transition: transform 0.6s;
+}
+form .bttn:hover
+{
+  transform: translateX(-10px);
+}
+.contanct-right
+{
+  margin-right: 20px;
+  margin-left: 30px;
+}
+.foo
+{
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.contanct-right form
+{
+  width: 100%;
+  right: 10px;
+}
